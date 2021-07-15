@@ -1,8 +1,8 @@
 /* import fonts (internally) */
 @font-face {
-	font-family: 'Hayah' 'Cairo-Regular';
+	font-family: 'Hayah' 'Cairo-Regular' 'Almarai;
 	src: url('fonts/Hayah'),
-    url('fonts/Cairo-Regular'),;
+    	url('fonts/Cairo-Regular'),;
 }
 
 html {
@@ -33,7 +33,7 @@ html {
 }
 
 body {
-    font-family: 'Hayah' ,sans-serif;
+    font-family: 'Hayah' ,'Cairo-Regular' ,'Almarai', sans-serif;
     font-size: 20px;
     direction: rtl;
     letter-spacing: -1px;
