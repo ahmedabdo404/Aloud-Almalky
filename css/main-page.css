@@ -517,7 +517,7 @@ span hr {
     word-wrap:break-word;
 }
 
-/* fotter */
+/* contact */
 footer {
     background-color: var(--fifth-color);
     padding-top: 4%;
@@ -569,6 +569,7 @@ footer {
     direction: ltr;
     word-wrap: break-word;
 }
+
 /* tiny */
 @media (max-width: 279px) {
     .container0 {
@@ -667,8 +668,16 @@ footer {
     .contact-icons a i {
         font-size: 20px;
     }
+
+footer {
+    padding-top: 2%;
 }
 
+.container5 {
+    padding: 0 3% 2px 3%;
+}
+
+}
 /* small */
 @media (min-width: 280px) {
     .container0 {
