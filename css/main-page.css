@@ -409,6 +409,7 @@ span hr {
     text-align: center;
     letter-spacing: 0.2px;
 }
+
 /* image hover arrow up */
 .container2 img:hover + span {
     display: block;
@@ -428,7 +429,6 @@ span hr {
     position:absolute;
     left: 45%;
     top: -20px;
-    
 }
 
 /* exceptions of images */
@@ -579,7 +579,7 @@ footer {
     
     /* animation in header */
     .animation h3 {
-        font-size: 5vw;
+        font-size: 3vw;
         -webkit-text-stroke: 0.2vw var(--sec-color);
     }
 
@@ -668,6 +668,10 @@ footer {
     .contact-icons a i {
         font-size: 20px;
     }
+	
+    .container5 p {
+	font-size: 15px
+}
 
 footer {
     padding-top: 2%;
@@ -675,6 +679,14 @@ footer {
 
 .container5 {
     padding: 5px 3% 5px 3%;
+}
+	
+.container2 img + span {
+
+
+    min-width: calc(80% - 15%);
+    max-height: auto;
+    letter-spacing: 0.2px;
 }
 
 }
@@ -741,6 +753,8 @@ footer {
         flex-direction: row;
     }
 
+	.m-tahara img:hover + span{
+		
     .m-tahara img:hover + span {
         margin-top: 3%;
     }
