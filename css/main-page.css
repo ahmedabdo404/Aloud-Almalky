@@ -1,8 +1,8 @@
 /* import fonts (internally) */
 @font-face {
-	font-family: 'Hayah' 'Cairo-Regular' 'Almarai;
+	font-family: 'Hayah' 'Cairo-Regular' 'Almarai';
 	src: url('fonts/Hayah'),
-    	url('fonts/Cairo-Regular'),;
+    url('fonts/Cairo-Regular'),;
 }
 
 html {
@@ -47,6 +47,7 @@ body {
     padding: 20px 20px;
     height: 80px;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     z-index: 5;
@@ -401,7 +402,7 @@ span hr {
     top: 102%;
     z-index: 3;
     min-width: calc(80% - 15%);
-    max-height: calc(60% - 15%);
+    max-height: fit-content;
     margin: 0;
     padding: 0;
     background-color: var(--main-color);
@@ -571,20 +572,29 @@ footer {
 }
 
 /* tiny */
-@media (max-width: 279px) {
+@media (max-width: 280px) {
     .container0 {
         width: 500px;
         justify-content: space-between;
     }
-    
+
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .icon-links {
+        width: 30px;
+    }
+
     /* animation in header */
-    .animation h3 {
-        font-size: 3vw;
-        -webkit-text-stroke: 0.2vw var(--sec-color);
+    .animation {
+        display: none;
     }
 
     .landing {
-        min-height: calc(20vh - 80px);
+        min-height: calc(40h - 80px);
+        width: 100%;
     }
 
     .container1 {
@@ -594,20 +604,22 @@ footer {
 
     /* container1 text */
     .container1 h1{
-        font-size: 180%;
-        word-wrap: break-word;
+        font-size: 160%;
         margin-top: 65px;
     } 
     
     .container1 p {
-        font-size: 120%;
-        word-wrap: break-word;
+        font-size: 100%;
         line-height: 2;
     } 
 
     .container2 img {
         max-width: 130px;
         max-height: 130px;
+    }
+
+    .container2 img:hover + span {
+        margin-top: 5%;
     }
 
     /* exceptions of images */
@@ -620,8 +632,16 @@ footer {
         max-height: 245px;
     }
 
+    .m-tahara {
+        max-height: auto;
+    }
+
     .m-tahara img {
         max-height: 30%;
+    }
+
+    .m-tahara img:hover + span {
+        margin-top: -103%;
     }
     
     .branches {
@@ -669,26 +689,23 @@ footer {
         font-size: 20px;
     }
 	
-    .container5 p {
+    .container4 p {
 	font-size: 15px
-}
+    }
 
-footer {
-    padding-top: 2%;
-}
+    footer {
+        padding-top: 5%;
+    }
 
-.container5 {
-    padding: 5px 3% 5px 3%;
-}
-	
-.container2 img + span {
-
-
-    min-width: calc(80% - 15%);
-    max-height: auto;
-    letter-spacing: 0.2px;
-}
-
+    .container5 {
+        padding: 5px 3% 5px 3%;
+    }
+        
+    .container2 img + span {
+        min-width: calc(80% - 15%);
+        max-height: auto;
+        letter-spacing: 0.2px;
+    }
 }
 /* small */
 @media (min-width: 280px) {
@@ -697,13 +714,17 @@ footer {
         justify-content: space-between;
     }
 
+    .icon-links {
+        width: 35px;
+    }
+
     /* animation in header */
     .animation h3 {
-        font-size: 6vw;
+        font-size: 5vw;
         -webkit-text-stroke: 0.1vw var(--sec-color);
     }
     .landing {
-        max-height: calc(55vh - 80px);
+        max-height: calc(45vh - 80px);
     }
 
     .container1 {
@@ -753,8 +774,6 @@ footer {
         flex-direction: row;
     }
 
-	.m-tahara img:hover + span{
-		
     .m-tahara img:hover + span {
         margin-top: 3%;
     }
