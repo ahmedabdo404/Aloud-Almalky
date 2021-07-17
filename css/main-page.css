@@ -1,9 +1,9 @@
 /* import fonts (internally) */
-@font-face {
+/* @font-face {
 	font-family: 'Hayah' 'Cairo-Regular' 'Almarai';
 	src: url('fonts/Hayah'),
     url('fonts/Cairo-Regular'),;
-}
+} */
 
 html {
     scroll-behavior: smooth;
@@ -33,7 +33,7 @@ html {
 }
 
 body {
-    font-family: 'Hayah' ,'Cairo-Regular' ,'Almarai', sans-serif;
+    font-family:'Almarai', sans-serif;
     font-size: 20px;
     direction: rtl;
     letter-spacing: -1px;
@@ -222,6 +222,7 @@ body {
     position: absolute;
     width: 100%;
     max-width: 100%;
+    padding: 2%;
     text-align: center;
     top: 10%; 
     left: 70%;
@@ -504,24 +505,25 @@ span hr {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    padding-bottom: 2%;
 }
 
 .about-des {
     text-align: center;
     color: var(--third-color);
-    line-height: 120%;
-    padding: 0 3%;
+    font-size: 3vw;
+    padding: 1% 1%; 
 }
 
 .container4 div:nth-child(2) {
-    max-width: 1200px;
+    min-width: 100%;
     word-wrap:break-word;
 }
 
 /* contact */
 footer {
     background-color: var(--fifth-color);
-    padding-top: 4%;
+    padding-top: 2%;
     margin: 0
 }
 
@@ -707,6 +709,7 @@ footer {
         letter-spacing: 0.2px;
     }
 }
+
 /* small */
 @media (min-width: 280px) {
     .container0 {
@@ -720,11 +723,12 @@ footer {
 
     /* animation in header */
     .animation h3 {
-        font-size: 5vw;
-        -webkit-text-stroke: 0.1vw var(--sec-color);
+        font-size: 4vw;
+        -webkit-text-stroke: 0.08vw var(--sec-color);
     }
+
     .landing {
-        max-height: calc(45vh - 80px);
+        max-height: calc(50vh - 80px);
     }
 
     .container1 {
@@ -741,7 +745,7 @@ footer {
     } 
     
     .container1 p {
-        font-size: 130%;
+        font-size: 110%;
         line-height: 1.2;
     } 
 
@@ -794,12 +798,6 @@ footer {
         align-items: center;
     }
 
-    /* des hover */
-    .container2 img + span {
-        min-width: calc(80% - 15%);
-        max-height: calc(80% - 15%);
-    }
-
     .icons-flex img {
         max-width: 100px
     }
@@ -810,13 +808,18 @@ footer {
         min-height: 150px;
     }
     
+    .about-des {
+        font-size: 22px;
+    }
+
     /* contact icons */
     .contact-icons a i {
         font-size: 25px;
     }
+
+    footer {
+        padding-top: 10%;
 }
-
-
 
 /* sub-medium */
 @media (min-width: 768px) {
@@ -833,7 +836,7 @@ footer {
     }
 
     .landing {
-        max-height: calc(45vh - 80px);
+        max-height: calc(40vh - 80px);
     }
 
     .container1 {
@@ -989,7 +992,7 @@ footer {
         height: 300px;
     }
 
-    .icons-flex img{
+    .icons-flex img {
         max-width: 120px
     }
 
@@ -1020,6 +1023,14 @@ footer {
         min-width: 250px;
         min-height: 250px;
     }
+
+    .about-des {
+        font-size: 25px;
+    }
+
+    footer {
+        padding-top: 2%;
+    }
 }
 
 /* ex-large */
@@ -1037,7 +1048,7 @@ footer {
     }
 
     .landing {
-        max-height: calc(48vh - 80px);
+        max-height: calc(45vh - 80px);
     }
 
     .container1 {
@@ -1046,7 +1057,7 @@ footer {
     }
 
     /* container1 text */
-    .container1 h1{
+    .container1 h1 {
         font-size: 350%;
         word-wrap: break-word;
         margin-top: 45px;
@@ -1066,10 +1077,9 @@ footer {
     .hair-creem img {
         max-width: 100%;
         max-height: 100%;
-
     }
 
-    .hair-creem{
+    .hair-creem {
         max-width: 570px;
         border-radius: 7%;
     }
@@ -1091,7 +1101,7 @@ footer {
     }
     
 
-    .branches-frame{
+    .branches-frame {
         max-width: 350px;
         height: 350px;
     }
@@ -1100,7 +1110,8 @@ footer {
         max-width: 350px;
         height: 350px;
     }
-    .icons-flex img{
+
+    .icons-flex img {
         max-width: 150px
     }
 
@@ -1117,7 +1128,7 @@ footer {
         margin-bottom: 3%;
     } */
     
-    .sec5 .images-flex{
+    .sec5 .images-flex {
         margin-bottom: 5%;
     }
 
@@ -1130,5 +1141,5 @@ footer {
     .contact-icons a i {
         font-size: 40px;
     }
-
+}
 }
